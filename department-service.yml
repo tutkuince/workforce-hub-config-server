@@ -13,9 +13,14 @@ spring:
     username: root
     password: s3cr3t
     url: jdbc:postgresql://localhost:5432/departmentDB
+  boot:
+    message: Hello, Department Service
 
+# Register Netflix Eureka Server
 eureka:
   instance:
     client:
       serverUrl:
         defaultZone: http://localhost:8761/eureka/
+
+# Message
