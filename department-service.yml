@@ -14,7 +14,7 @@ spring:
     password: s3cr3t
     url: jdbc:postgresql://localhost:5432/departmentDB
   boot:
-    message: Hello, Department Service
+    message: Hello, Department Service from Github
 
 # Register Netflix Eureka Server
 eureka:
