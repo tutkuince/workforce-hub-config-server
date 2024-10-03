@@ -14,7 +14,7 @@ spring:
     password: s3cr3t
     url: jdbc:postgresql://localhost:5432/employeeDB
   boot:
-    message: Hello, Employee Service Spring Cloud Bus Demo
+    message: Hello, Employee Service Spring Cloud Bus Demo 1
 
 # Register Netflix Eureka Server
 eureka:
