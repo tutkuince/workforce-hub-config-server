@@ -55,6 +55,15 @@ resilience4j:
         wait-duration-in-open-state:
           seconds: 5
 
+# Retry Configuration
+resilience4j:
+  retry:
+    instances:
+      EMPLOYEE-SERVICE:
+        max-attempts: 5
+        wait-duration:
+          seconds: 2s
+
 
 # Logging Config
 logging:
