@@ -30,8 +30,13 @@ management:
       exposure:
         include: "*"
   tracing:
+    enabled: true
     sampling:
       probability: 1.0
+
+zipkin:
+  tracing: 
+    endpoint: http://127.0.0.1:9411
 
 # Logging Config
 logging:
