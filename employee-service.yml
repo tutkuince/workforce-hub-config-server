@@ -40,6 +40,13 @@ management:
     sampling:
       probability: 1.0
 
+# Logging Config
+logging:
+  pattern:
+    level: "%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]"
+  level:
+    org.springframework.web: debug
+
 # Circuit Breaker Configuration
 resilience4j:
   circuitbreaker:
@@ -63,12 +70,3 @@ resilience4j:
         max-attempts: 5
         wait-duration:
           seconds: 2s
-
-
-# Logging Config
-logging:
-  pattern:
-    level: "%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]"
-  level:
-    org.springframework.web: debug
-
