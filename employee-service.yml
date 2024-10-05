@@ -61,9 +61,7 @@ resilience4j:
         sliding-window-type: count_based
         wait-duration-in-open-state:
           seconds: 5
-
-# Retry Configuration
-resilience4j:
+  # Retry Configuration
   retry:
     instances:
       EMPLOYEE-SERVICE:
